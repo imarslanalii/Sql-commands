@@ -60,10 +60,9 @@
 # SELECT * FROM customers
 # WHERE field2 IN (‘query1’, ‘query2’);
 
-
+# indexes (to find data mpre quickly)
 # CREATE INDEX CIndex
 # ON customers(field1);
-
 # DROP INDEX CIndex ON customers;
 
 # CREATE TABLE products (
