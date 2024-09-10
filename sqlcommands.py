@@ -32,6 +32,7 @@
 # ALTER TABLE customers
 # DROP COLUMN testCol;
 
+# SELECT 
 
 # SELECT *(staric use for all) FROM customers;
 # SELECT field1, field2 FROM customers;
@@ -39,10 +40,9 @@
 # SELECT * FROM customers ORDER BY field2;
 # SELECT * FROM customers ORDER BY field2 DESC(descending);
 # SELECT DISTINCT field2 FROM customers;
-
 # SELECT * FROM customers WHERE age < 30;
 
-# SQL Operator .....
+# SQL OPERATOR
 
 # SELECT * FROM customers
 # WHERE age
@@ -60,7 +60,8 @@
 # SELECT * FROM customers
 # WHERE field2 IN (‘query1’, ‘query2’);
 
-# indexes (to find data mpre quickly)
+# INDEXES (to find data mpre quickly)
+
 # CREATE INDEX CIndex
 # ON customers(field1);
 # DROP INDEX CIndex ON customers;
@@ -77,11 +78,14 @@
 # 	orderNumber INT,
 # 	productId INT,
 # 	customerId INT,
+#   age int,
 # 	orderDate DATETIME default CURRENT_TIMESTAMP,
 # 	PRIMARY KEY(id),
 #       FOREIGN KEY(customerId) REFERENCES customers(id),
 #       FOREIGN KEY(productId) REFERENCES products(id)
 # );
+
+# JOINS (used to combine rows based on a comman field btw them)
 
 # SELECT customers.field1, customers.field2, orders.orderNumber
 # FROM customers
@@ -109,14 +113,16 @@
 # ON orders.customerId = customers.id
 # ORDER BY orders.orderNumber;
 
+# ALIASES (give temporary name of columns and rows)
+
 # SELECT field1 AS ‘First Name’, field2 AS ‘Last Name’ FROM customers;
-# SELECT CONCAT(field1, ‘ ‘, field2) AS ‘Name’, field3, FROM customers; 
+# SELECT CONCAT(field1,' ', field2) AS ‘Name’, field3, FROM customers; 
 # SELECT o.id, o.orderDate, c.field1, c.field2
 # FROM customers AS c, orders AS o;
 
 # SQL Aggregate Functions
 
-# SELECT AVG(field3) FROM customers;
+# SELECT AVG(age) FROM customers;
 # SELECT COUNT(field3) FROM customers;
 # SELECT MAX(field3) FROM customers;
 # SELECT MIN(field3) FROM customers;
