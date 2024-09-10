@@ -33,7 +33,7 @@
 # DROP COLUMN testCol;
 
 
-# SELECT * FROM customers;
+# SELECT *(staric use for all) FROM customers;
 
 # SELECT field1, field2 FROM customers;
 
