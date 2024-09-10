@@ -18,7 +18,7 @@
 
 
 # UPDATE customers
-# SET field2 = ‘value2C_new’
+# SET email = 'test@gmail.com'
 # WHERE id = 3;
 
 # DELETE FROM customers
