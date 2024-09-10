@@ -34,33 +34,28 @@
 
 
 # SELECT *(staric use for all) FROM customers;
-
 # SELECT field1, field2 FROM customers;
-
 # SELECT * FROM customers WHERE id = 3;
-
 # SELECT * FROM customers ORDER BY field2;
-
-# SELECT * FROM customers ORDER BY field2 DESC;
-
+# SELECT * FROM customers ORDER BY field2 DESC(descending);
 # SELECT DISTINCT field2 FROM customers;
 
-# SELECT * FROM customers WHERE testCol < 30;
+# SELECT * FROM customers WHERE age < 30;
+
+# SQL Operator .....
 
 # SELECT * FROM customers
-# WHERE testCol
+# WHERE age
 # BETWEEN 22 AND 30;
 
-# WHERE testCol
-# BETWEEN 22 AND 30;SELECT * FROM customers
-# WHERE field2 LIKE ‘%n’; 
+# SELECT * FROM customers
+# WHERE field2 LIKE ‘%n’(if word end with n); 
 
 # SELECT * FROM customers
-# WHERE field2 LIKE ‘%n%’; 
-
+# WHERE field2 LIKE ‘%n%’(if any leters have n); 
 
 # SELECT * FROM customers
-# WHERE field2 NOT LIKE ‘%n%’; 
+# WHERE field2 NOT LIKE ‘%n%’(don't have n); 
 
 # SELECT * FROM customers
 # WHERE field2 IN (‘query1’, ‘query2’);
