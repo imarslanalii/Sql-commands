@@ -14,7 +14,6 @@
 # (‘value1B’, ‘value2B’, ‘value3B’), 
 # (‘value1C’, ‘value2C’, ‘value3C’);
 
-
 # UPDATE customers
 # SET email = 'test@gmail.com'
 # WHERE id = 3;
