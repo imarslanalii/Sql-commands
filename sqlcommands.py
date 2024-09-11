@@ -1,7 +1,6 @@
 # CREATE DATABASE test;
 # DROP DATABASE test;
 
-
 # CREATE TABLE customers(
 # 	id INT NOT NULL AUTO_INCREMENT,
 # 	field1 VARCHAR(255),
@@ -9,7 +8,6 @@
 # 	field3 VARCHAR(255),
 # 	PRIMARY KEY(id)
 # );
-
 
 # INSERT INTO customers (field1, field2, field3) 
 # VALUES (‘value1A’, ‘value2A’, ‘value3A’), 
