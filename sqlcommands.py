@@ -137,3 +137,4 @@
 
 # SELECT UCASE(field1) FROM customers;
 # SELECT LCASE(field1) FROM customers;
+
